@@ -1,0 +1,33 @@
+li{
+    display: inline;
+margin: 5px;
+
+}
+.logo{
+    color: blue;
+
+}
+
+
+.right{
+    text-align: right;
+    float: right;
+}
+.right li{
+    color:  black;
+    border: 1px solid black;
+    padding: 3px;
+
+
+}
+img{
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: white;
+}
