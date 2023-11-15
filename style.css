@@ -128,3 +128,26 @@ nav{
 }
 
 
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   
+  }
+  .Search{
+    width: 100%;
+    height: auto;
+  }
+  /* The content */
+
+
+  
+
+ 
+
+
