@@ -336,3 +336,152 @@ button:hover {
 }
 
 
+
+/* details page css  */
+.details-container{
+  background-color: var(--body-text);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-inline: 20em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+ position: relative;
+
+
+  
+  width: 100%
+
+
+
+}
+.details-description{
+  background-color: var(--body-text);
+  color: white;
+  width: 65%;
+}
+
+
+.details-title p {
+  font-size: 14px;
+  font-weight: 200;
+  color: var(--brand-secondary);
+
+  
+}
+.details-title h3 {
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+.rating i{
+  font-weight: 200;
+
+}
+
+
+.author-card{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding:0.1em;
+  
+  background-color: var(--bg_default);
+
+  
+
+  
+ 
+
+position: absolute;
+top: 18px;
+left: 62%;
+width: 280px;
+height: 163%;
+
+}
+
+.author-card img{
+  width: 100%;
+  height: 50%;
+
+
+}
+.author-name{
+  padding: 0.7em;
+ left: 5%;
+
+}
+
+.add-favourites{
+  border: solid 1px lightgray;
+  padding : 0.5em;
+  margin: 0.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.add-favourites button{
+  background-color: var(--brand-secondary);
+  color: var(--bg_body);
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding:0.4em;
+  border: transparent;
+  margin-bottom: 8px;
+
+
+}
+.add-favourites p{
+  text-align: left;
+  margin-bottom: 8px;
+}
+.credits{
+font-weight: 200;
+
+
+
+}
+
+.topics{
+  background-color: var(--bg_body);
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 20em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
+}
+.topics-container{
+ 
+  background-color: var(--bg_default);
+  border: 1px solid #ccc; /* Light border between each list item */
+  width: 65%;
+
+}
+.topics-container h2{
+  border-bottom: 1px solid #ccc; /* Light border between each list item */
+  padding: 1em; /* Adjust as needed for spacing */
+  
+  
+
+  
+
+}
+.topics-container ul{
+  list-style-type: none;
+  
+}
+.topics-container li{
+  border-bottom: 1px solid #ccc; /* Light border between each list item */
+  padding-bottom: 5px; /* Adjust as needed for spacing */
+  padding:1em;
+}
+.topics-container span{
+  margin-inline: 1em;
+  color: var(--brand-secondary);
+}
