@@ -15,13 +15,79 @@
 
 <body>
   <header>
-    <h2>Web Topics</h2>
+    <h2><a href="index.html">Web Topics</a></h2>
     <nav>
       <ul>
-        <li name="dark"><ion-icon name="moon-outline"></ion-icon><span>Dark Mode</span></li>
-        <li name="favourites"><ion-icon name="heart-outline"></ion-icon><span>Favourites</span></li>
+        <li class="border" name="dark" id='dark-mode'><ion-icon name="moon-outline"></ion-icon><span>Dark Mode</span>
+        </li>
+        <li class="border" name="favourites" id="favourites"><ion-icon
+            name="heart-outline"></ion-icon><span>Favourites</span></li>
       </ul>
     </nav>
+
+
+    <div id="popupContainer" class="popup-container">
+      <div class="favourites-title">
+        <h3>My Favourites Topics</h3>
+        <span id="closePopupBtn" class="close-popup-btn">&times;</span>
+      </div>
+      <div class="popup-content">
+
+
+
+        <div class="all-mini-cards">
+          <div class="mini-card border">
+
+            <a href="details.html" class="card-link">
+              <img src="Logos/analytics.png" alt="analytics">
+              <div class="mini-card-info">
+                <div class="card-title ">
+
+                  <h4 class="text-length">Card 1 dfihapfoh dsahf odsah fopsa</h4>
+
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+
+                </div>
+
+              </div>
+            </a>
+
+
+          </div>
+
+          <div class="mini-card border">
+
+            <a href="details.html" class="card-link">
+              <img src="Logos/analytics.png" alt="analytics">
+              <div class="mini-card-info">
+                <div class="card-title ">
+
+                  <h4 class="text-length">Card 1 dfihapfoh dsahf odsah fopsa</h4>
+
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+
+                </div>
+
+              </div>
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <div class="welcome">
     <div class="wel-block">
@@ -34,11 +100,11 @@
 
 
   <main>
-    <div class="search-container  ">
+    <div class="search-container border">
       <div class="search-bar ">
         <div class="search-icon">
           <ion-icon name="search-outline"></ion-icon>
-         
+
 
           <input type="text" class="search-input" placeholder="Search the website...">
         </div>
@@ -68,268 +134,162 @@
     </div>
 
     <div class="all-card">
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <i class=""></i>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+      <div class="card border">
+        <a href="details.html" class="card-link">
+          <img src="Logos/analytics.png" alt="analytics">
+          <div class="card-info">
+            <div class="card-title">
+              <p class="text-length">Description of Card 1</p>
+              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+            </div>
+            <div class="rating">
+              <i class=""></i>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+            </div>
+            <div class="author text-length">
+              author: this is where author should be shown
 
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+      <div class="card border">
+        <a href="details.html" class="card-link">
+          <img src="Logos/analytics.png" alt="analytics">
+          <div class="card-info">
+            <div class="card-title">
+              <p class="text-length">Description of Card 1</p>
+              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+            </div>
+            <div class="rating">
+              <i class=""></i>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+            </div>
+            <div class="author text-length">
+              author: this is where author should be shown
 
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+      <div class="card border">
+        <a href="details.html" class="card-link">
+          <img src="Logos/analytics.png" alt="analytics">
+          <div class="card-info">
+            <div class="card-title">
+              <p class="text-length">Description of Card 1</p>
+              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
 
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+            </div>
+            <div class="rating">
+              <i class=""></i>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
 
-          </div>
-        </div>
-      </div>
-     
-      
-      <div class="card">
-        <img src="Logos/analytics.png" alt="analytics">
-        <div class="card-info">
-          <div class="card-title">
-            <p>Description of Card 1</p>
-            <h3>Card 1 Title</h3>
-          </div>
-          <div class="rating">
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <div class="author">
-            author: this is where author should be shown
+            </div>
+            <div class="author text-length">
+              author: this is where author should be shown
 
+            </div>
           </div>
-        </div>
+        </a>
       </div>
+      <div class="card border">
+        <a href="details.html" class="card-link">
+          <img src="Logos/analytics.png" alt="analytics">
+          <div class="card-info">
+            <div class="card-title">
+              <p class="text-length">Description of Card 1</p>
+              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
+
+            </div>
+            <div class="rating">
+              <i class=""></i>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+
+            </div>
+            <div class="author text-length">
+              author: this is where author should be shown
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card border">
+        <a href="details.html" class="card-link">
+          <img src="Logos/analytics.png" alt="analytics">
+          <div class="card-info">
+            <div class="card-title">
+              <p class="text-length">Description of Card 1</p>
+              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
+
+            </div>
+            <div class="rating">
+              <i class=""></i>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+
+            </div>
+            <div class="author text-length">
+              author: this is where author should be shown
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card border">
+        <a href="details.html" class="card-link">
+          <img src="Logos/analytics.png" alt="analytics">
+          <div class="card-info">
+            <div class="card-title">
+              <p class="text-length">Description of Card 1</p>
+              <h3 class="text-length">Card 1 </h3>
+
+            </div>
+            <div class="rating">
+              <i class=""></i>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+
+            </div>
+            <div class="author text-length">
+              author: this is where author should be shown
+
+            </div>
+          </div>
+        </a>
+      </div>
+
+
     </div>
 
 
@@ -341,6 +301,8 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type='module' src='Darkmode.js'> </script>
+  <script type='module' src='favourites.js'></script>
 </body>
 
 </html>
