@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   /* this should be used for intial start */
 }
 
@@ -24,7 +24,8 @@
   --lines-color: #000000;
   --body-text: #ededed;
   --heart-color: #dc143c;
-  --details-container:  #373737;;
+  --details-container: #373737;
+  ;
 }
 
 body {
@@ -39,15 +40,17 @@ body {
 
 }
 
-.border{
+.border {
   border: 1px solid var(--lines-color, #ddd);
 
 }
-.text-length{
+
+.text-length {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -60,12 +63,14 @@ header h2 {
   color: var(--brand-primary, #00f);
   font-weight: 700;
   margin-inline: 2rem;
- 
+
 }
-header h2 a{
+
+header h2 a {
   text-decoration: none;
 
 }
+
 header h2 a:visited,
 header h2 a:active {
   color: inherit;
@@ -74,7 +79,7 @@ header h2 a:active {
 }
 
 nav {
-  margin: 0 ;
+  margin-right: 25px;
 }
 
 nav ul {
@@ -85,7 +90,7 @@ nav ul {
 }
 
 nav ul li {
-  
+
   padding: 10px;
   border-radius: 5px;
   display: flex;
@@ -160,7 +165,7 @@ li ion-icon {
 
   justify-content: flex-end;
 
- 
+
 }
 
 .search-bar {
@@ -217,7 +222,8 @@ li ion-icon {
   padding-top: 3px;
   padding-right: 5px;
   height: 100%;
-  border-left: 1px solid var(--lines-color, #ddd);;
+  border-left: 1px solid var(--lines-color, #ddd);
+  ;
 }
 
 
@@ -236,8 +242,9 @@ li ion-icon {
   z-index: 1;
 
 }
-.filter{
-  border-left:1px solid var(--lines-color, #ddd);
+
+.filter {
+  border-left: 1px solid var(--lines-color, #ddd);
 }
 
 .dropdown label {
@@ -271,7 +278,7 @@ li ion-icon {
 
 .card {
 
-  
+
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -279,17 +286,19 @@ li ion-icon {
 
   width: calc(20% - 20px);
   /* 20% width with 10px margin on each side */
- 
+
   box-sizing: border-box;
 }
 
 h3 {
   margin-top: 0;
 }
+
 .card-link {
   text-decoration: none;
   color: inherit;
-  display: block; /* Ensure the anchor takes up the entire card space */
+  display: block;
+  /* Ensure the anchor takes up the entire card space */
 }
 
 .card-link:visited,
@@ -316,7 +325,7 @@ h3 {
 }
 
 .card-title {
-  
+
 
 
   margin-bottom: 20px;
@@ -324,10 +333,10 @@ h3 {
 }
 
 .card-title h3 {
- /* add this as a default */
-  
-   
-  
+  /* add this as a default */
+
+
+
   font-size: 15px;
   font-weight: 700;
 }
@@ -360,10 +369,11 @@ main {
   font-size: small;
   margin-bottom: 15px;
   font-weight: 400;
-  
+
 
 }
-.rating ion-icon{
+
+.rating ion-icon {
   font-size: 1rem;
   gap: 1px;
 
@@ -385,7 +395,7 @@ footer {
   padding: 2em;
   width: 100%;
   bottom: 0;
- 
+
   z-index: 3;
 
 }
@@ -495,8 +505,8 @@ button:hover {
 
 .add-favourites button {
   background-color: var(--brand-secondary);
-  color:#ffffff;
-  
+  color: #ffffff;
+
   font-size: 1.2rem;
   font-weight: 200;
   padding: 0.6em;
@@ -508,7 +518,8 @@ button:hover {
 
 
 }
-.add-favourites button ion-icon{
+
+.add-favourites button ion-icon {
   font-size: 2rem;
   margin-inline-start: 1rem;
 }
@@ -563,7 +574,8 @@ button:hover {
 }
 
 .topics-container li {
-  border-bottom: 1px solid var(--lines-color, #ddd);;
+  border-bottom: 1px solid var(--lines-color, #ddd);
+  ;
   /* Light border between each list item */
   padding-bottom: 5px;
   /* Adjust as needed for spacing */
@@ -576,10 +588,12 @@ button:hover {
   margin-inline: 1em;
   color: var(--brand-secondary);
 }
-span ion-icon{
+
+span ion-icon {
   font-size: 1.5rem;
 }
-.checklist-topics li{
+
+.checklist-topics li {
   display: flex;
   align-items: center;
 
@@ -590,128 +604,139 @@ span ion-icon{
 /* Resoponsive  */
 
 @media only screen and (max-width: 900px) {
+  nav{
+    margin-right: 0px;
+  }
 
-li span{
-  display : none;
-  visibility: hidden;
-}
-
-
-header { 
- 
-  
-  padding: 1.5rem;
+  li span {
+    display: none;
+    visibility: hidden;
+  }
 
 
-}
-header h2{
-  margin-inline: 0;
-  font-weight: 400;
-  font-size: 1.2em;
-}
-
-.triangle1{
-  height: 20%;
-}
-.triangle2{
-  height: 20%;
-}
-
-.wel-block h2{
-  margin-top: 5px;
-  
-}
-
-main{
-  padding : 0em; 
-
-}
-
-.search-container{
-  display : flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 100%;
-  justify-content: start;
-  width: inherit;
-  margin: 0px;
-  margin-inline:1rem;
-
-  margin-top: 1rem;
+  header {
 
 
-}
-.search-icon{
-  display: flex;
-  align-items: center;
-}
-.dropdown-container{
-  width: 100%;
-  border-top: 1px solid var(--lines-color, #ddd);
-
-}
-
-.dropdown{
-  width: 50%;
-  padding-bottom: 7px;
-
-}
-.all-card{
-  display: flex;
-  flex-direction : column;
-  align-items: center;
-  align-content: center;
-  margin: 1rem;
+    padding: 1.5rem;
 
 
+  }
 
-}
-.card{
-  width: 100%;
-  margin-inline: 1rem;
-  margin-top: 1rem;
+  header h2 {
+    margin-inline: 0;
+    font-weight: 400;
+    font-size: 1.2em;
+  }
 
-}
-.details-container{
-  flex-direction: column;
-  padding-inline: 0px;
-  align-items: center;
+  .triangle1 {
+    height: 20%;
+  }
 
-  
+  .triangle2 {
+    height: 20%;
+  }
 
-}
+  .wel-block h2 {
+    margin-top: 5px;
 
-.author-card{
-  position:inherit;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  margin-top: 1rem;
-  
+  }
 
-}
-.topics{
-  padding-inline: 0px;
-  align-items: center;
+  main {
+    padding: 0em;
+
+  }
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: start;
+    width: inherit;
+    margin: 0px;
+    margin-inline: 1rem;
+
+    margin-top: 1rem;
 
 
-}
+  }
 
-.checklist-topics li span{
-  display: flex;
-  visibility: visible;
-}
+  .search-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-container {
+    width: 100%;
+    border-top: 1px solid var(--lines-color, #ddd);
+
+  }
+
+  .dropdown {
+    width: 50%;
+    padding-bottom: 7px;
+
+  }
+
+  .all-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 1rem;
+
+
+
+  }
+
+  .card {
+    width: 100%;
+    margin-inline: 1rem;
+    margin-top: 1rem;
+
+  }
+
+  .details-container {
+    flex-direction: column;
+    padding-inline: 0px;
+    align-items: center;
+
+
+
+  }
+
+  .author-card {
+    position: inherit;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 1rem;
+
+
+  }
+
+  .topics {
+    padding-inline: 0px;
+    align-items: center;
+
+
+  }
+
+  .checklist-topics li span {
+    display: flex;
+    visibility: visible;
+  }
 
 }
 
 /* Favourites pop up */
 .popup-container {
-  
-  
+
+
   display: none;
   flex-direction: column;
-align-items: flex-start;
+  align-items: flex-start;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -737,7 +762,7 @@ align-items: flex-start;
   cursor: pointer;
   font-size: 20px;
 } */
-.mini-card{
+.mini-card {
   border-radius: 8px;
   display: flex;
   justify-items: center;
@@ -745,43 +770,50 @@ align-items: flex-start;
   width: 140px;
   margin-right: 10px;
   overflow: hidden;
-  
+
 }
-.mini-card img{
+
+.mini-card img {
   width: 100%;
   height: 70px;
-  border-top-right-radius:8px ;
+  border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 
 
 }
-.mini-card-info{
+
+.mini-card-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 5px;
 
 }
-.mini-card-info .rating{
+
+.mini-card-info .rating {
   margin-bottom: 0px;
 }
-.mini-card-info .card-title{
+
+.mini-card-info .card-title {
   margin-bottom: 2px;
 }
-.all-mini-cards{
+
+.all-mini-cards {
   display: flex;
   flex-direction: row;
-  
+
   position: inherit;
 }
-.mini-card-info h4{
+
+.mini-card-info h4 {
   max-width: 135px;
 }
-#closePopupBtn{
-  cursor:pointer ;
+
+#closePopupBtn {
+  cursor: pointer;
 }
 
-.favourites-title{
+.favourites-title {
   margin-bottom: 15px;
   display: flex;
   flex-direction: row;
