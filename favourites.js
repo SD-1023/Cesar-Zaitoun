@@ -3,16 +3,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const popupContainer = document.getElementById('popupContainer');
     const closeContainer = document.getElementById('closePopupBtn');
 
-     
-    toggleFavoritesBtn.addEventListener('click', function(){
+
+    toggleFavoritesBtn.addEventListener('click', function () {
         const isHidden = window.getComputedStyle(popupContainer).display === 'none';
 
         popupContainer.style.display = isHidden ? 'flex' : 'none';
-    
+
 
     })
 
-    closeContainer.addEventListener('click', function(){
-        popupContainer.style.display='none';
+    closeContainer.addEventListener('click', function () {
+        popupContainer.style.display = 'none';
     })
 });
