@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 11</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style2.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
@@ -18,7 +18,7 @@
     <h2><a href="index.html">Web Topics</a></h2>
     <nav>
       <ul>
-        <li class="border" name="dark" id='dark-mode'><ion-icon name="moon-outline"></ion-icon><span>Dark Mode</span>
+        <li class="border" name="dark" id='theme-toggle'><ion-icon name="moon-outline"></ion-icon><span>Dark Mode</span>
         </li>
         <li class="border" name="favourites" id="favourites"><ion-icon
             name="heart-outline"></ion-icon><span>Favourites</span></li>
@@ -104,18 +104,16 @@
       <div class="search-bar ">
         <div class="search-icon">
           <ion-icon name="search-outline"></ion-icon>
-
-
           <input type="text" class="search-input" placeholder="Search the website...">
         </div>
       </div>
       <div class="dropdown-container">
         <div class="dropdown ">
           <label for="category">Sort by:</label>
-          <select id="category">
+          <select id="sort-dropdown">
             <option value="all">Default</option>
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
+            <option value="topic">Topic Title</option>
+            <option value="author">Author Name</option>
             <!-- Add more options as needed -->
           </select>
         </div>
@@ -123,28 +121,30 @@
 
         <div class="dropdown filter">
           <label for="location">Filter by:</label>
-          <select id="location">
+          <select id="category-filter">
             <option value="all">Default</option>
-            <option value="location1">Location 1</option>
-            <option value="location2">Location 2</option>
+           
             <!-- Add more options as needed -->
           </select>
         </div>
       </div>
     </div>
 
-    <div class="all-card">
+    <div class="all-card" id="card-data">
+      <div id="loader" class="loader-container">
+        <div class="loader"></div>
+    </div>
 
 
+<!-- 
 
-
-      <div class="card border">
+      <div class="card border" >
         <a href="details.html" class="card-link">
           <img src="logos/analytics.png" alt="analytics">
           <div class="card-info">
             <div class="card-title">
               <p class="text-length">Description of Card 1</p>
-              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
+              <h3 class="topic-card-header">Card 1 Title </h3>
 
             </div>
             <div class="rating">
@@ -162,132 +162,11 @@
             </div>
           </div>
         </a>
-      </div>
-      <div class="card border">
-        <a href="details.html" class="card-link">
-          <img src="logos/analytics.png" alt="analytics">
-          <div class="card-info">
-            <div class="card-title">
-              <p class="text-length">Description of Card 1</p>
-              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
-
-            </div>
-            <div class="rating">
-              <i class=""></i>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-
-            </div>
-            <div class="author text-length">
-              author: this is where author should be shown
-
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="card border">
-        <a href="details.html" class="card-link">
-          <img src="logos/analytics.png" alt="analytics">
-          <div class="card-info">
-            <div class="card-title">
-              <p class="text-length">Description of Card 1</p>
-              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
-
-            </div>
-            <div class="rating">
-              <i class=""></i>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-
-            </div>
-            <div class="author text-length">
-              author: this is where author should be shown
-
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="card border">
-        <a href="details.html" class="card-link">
-          <img src="logos/analytics.png" alt="analytics">
-          <div class="card-info">
-            <div class="card-title">
-              <p class="text-length">Description of Card 1</p>
-              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
-
-            </div>
-            <div class="rating">
-              <i class=""></i>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-
-            </div>
-            <div class="author text-length">
-              author: this is where author should be shown
-
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="card border">
-        <a href="details.html" class="card-link">
-          <img src="logos/analytics.png" alt="analytics">
-          <div class="card-info">
-            <div class="card-title">
-              <p class="text-length">Description of Card 1</p>
-              <h3 class="text-length">Card 1 Title ghhjhgkjhkjhgk g kjh gkjgk jhgk jg kjhg kj</h3>
-
-            </div>
-            <div class="rating">
-              <i class=""></i>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-
-            </div>
-            <div class="author text-length">
-              author: this is where author should be shown
-
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="card border">
-        <a href="details.html" class="card-link">
-          <img src="logos/analytics.png" alt="analytics">
-          <div class="card-info">
-            <div class="card-title">
-              <p class="text-length">Description of Card 1</p>
-              <h3 class="text-length">Card 1 </h3>
-
-            </div>
-            <div class="rating">
-              <i class=""></i>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-              <ion-icon name="star-outline"></ion-icon>
-
-            </div>
-            <div class="author text-length">
-              author: this is where author should be shown
-
-            </div>
-          </div>
-        </a>
-      </div>
+      </div> -->
+      
+      
+     
+      
 
 
     </div>
@@ -303,6 +182,8 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script type='module' src='darkmode.js'> </script>
   <script type='module' src='favourites.js'></script>
+  <script type='module' src='index.js'></script>
+  <!-- <script type='module' src='details.js'></script> -->
 </body>
 
 </html>
